@@ -1,3 +1,4 @@
+# Implementing a dynamic array
 import ctypes
 
 class M(object):
@@ -41,6 +42,4 @@ class DynamicArray(object):
     def make_array(self, new_cap):
         return (new_cap * ctypes.py_object)()
 
-arr = DynamicArray()
-arr.append(1)
-print(len(arr))
+
